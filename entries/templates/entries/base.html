@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head> 
+        <title>Diary</title>
+        <link rel="stylesheet" href="{% static 'css/diary.css' %}">
+    </head>
+
+
+
+<body>
+    <p style="color:black;" </p>
+    <h1> <a href = "/" > Diary</a></h1>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="message">
+                    {{ message }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+
+    {% block content %} {% endblock content %}
+
+
+    <hr>
+    <form method="post" action="{% url 'admin:logout' %}">
+        {% csrf_token %}
+        <input type="submit" value="Logout" />
+    </form>
+
+</body>
+
+</html>

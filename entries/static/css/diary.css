@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(5, 0, 0);
+    background-color: rgb(63, 50, 50);
+}
+
+a {
+    color: inherit;
+    color: black;
+}
+a:hover {
+    opacity: 0.7;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: rgb(0, 0, 0)
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: yellow;
+    font-size: 1.4em;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    vertical-align: top;
+}
+
+h2 {
+    color: black;
+    background-color: aquamarine;
+}
+
+.mark {
+    background-color: rgb(37, 28, 28);
+}
+.mark a {
+    text-decoration: none;
+}
+
+article {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: black;
+    font-size: 1.2em;
+    padding-left: 1rem;
+    line-height: 1.3em;
+    max-width: 36rem;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+button,
+textarea,
+input {
+    color: black;
+    font-size: inherit;
+    min-height: 2.5em;
+    padding: 0 1rem;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+}
+
+textarea {
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+button,
+input[type="submit"] {
+    margin: 0 1rem 2px 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    min-width: 8rem;
+}
+
+.Saturday,
+.Sunday {
+    background-color: rgb(94, 31, 6);
+}
+
+.messages {
+    padding: 0;
+    width: 100%;
+    background: lightblue; 
+    text-align: center;
+    color: black;
+}
